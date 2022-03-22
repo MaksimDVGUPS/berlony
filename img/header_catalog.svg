@@ -1,0 +1,6 @@
+<svg id="icon-catalog" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#ffffff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M2.133 20.345h7.492c0.884 0 1.6 0.716 1.6 1.6v7.492c0 0.884-0.716 1.6-1.6 1.6h-7.492c-0.884 0-1.6-0.716-1.6-1.6v-7.492c0-0.884 0.716-1.6 1.6-1.6z"></path>
+    <path fill="#ffffff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M2.133 5.058h7.492c0.884 0 1.6 0.716 1.6 1.6v7.492c0 0.884-0.716 1.6-1.6 1.6h-7.492c-0.884 0-1.6-0.716-1.6-1.6v-7.492c0-0.884 0.716-1.6 1.6-1.6z"></path>
+    <path fill="#e31c39" style="fill: var(--color5, #e31c39); stroke: var(--color5, #e31c39)" stroke="#e31c39" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M17.256 7.183l5.298-5.298c0.625-0.625 1.638-0.625 2.263 0l5.298 5.298c0.625 0.625 0.625 1.638 0 2.263l-5.298 5.298c-0.625 0.625-1.638 0.625-2.263 0l-5.298-5.298c-0.625-0.625-0.625-1.638 0-2.263z"></path>
+    <path fill="#ffffff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M17.42 20.345h7.492c0.884 0 1.6 0.716 1.6 1.6v7.492c0 0.884-0.716 1.6-1.6 1.6h-7.492c-0.884 0-1.6-0.716-1.6-1.6v-7.492c0-0.884 0.716-1.6 1.6-1.6z"></path>
+</svg>

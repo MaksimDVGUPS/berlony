@@ -9,11 +9,14 @@
     
     <!--Стили-->
     <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!--Скрипты-->
     <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/jquery-ui.min.js" defer></script>
+    <script src="js/jquery.ui.touch-punch.min.js" defer></script>
     <script src="js/slick.min.js" defer></script>
     <script src="js/imask.js" defer></script>
     <script src="js/script.js" defer></script>
@@ -1507,212 +1510,45 @@
         </div>
         <div class="layout__content">
             <main class="main">
-                <section class="section banner">
-                    <div class="banner__slider">
-                        <div class="banner__slide">
-                            <img src="img/banner_1.jpg" alt="Баннер 1" class="banner__img">
-                            <div class="banner__info">
-                                <div class="banner__text">
-                                    <h4 class="banner__title">
-                                        Обновление раздела
-                                        <span>распродажа</span>
-                                    </h4>
-                                    <div class="section__divider"></div>
-                                    <p class="banner__description">
-                                        Более 500 предметов мебели и интерьера со скидками
-                                        <span>до 50%</span>
-                                    </p>
-                                </div>
-                                <a href="#" class="banner__btn">
-                                    <span>В каталог</span>
-                                    <img src="img/banner__arrow.svg" alt="Перейти">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner__slide">
-                            <img src="img/banner_1.jpg" alt="Баннер 1" class="banner__img">
-                            <div class="banner__info">
-                                <div class="banner__text">
-                                    <h4 class="banner__title">
-                                        Обновление раздела
-                                        <span>распродажа</span>
-                                    </h4>
-                                    <div class="section__divider"></div>
-                                    <p class="banner__description">
-                                        Более 500 предметов мебели и интерьера со скидками
-                                        <span>до 50%</span>
-                                    </p>
-                                </div>
-                                <a href="#" class="banner__btn">
-                                    <span>В каталог</span>
-                                    <img src="img/banner__arrow.svg" alt="Перейти">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner__slide">
-                            <img src="img/banner_1.jpg" alt="Баннер 1" class="banner__img">
-                            <div class="banner__info">
-                                <div class="banner__text">
-                                    <h4 class="banner__title">
-                                        Обновление раздела
-                                        <span>распродажа</span>
-                                    </h4>
-                                    <div class="section__divider"></div>
-                                    <p class="banner__description">
-                                        Более 500 предметов мебели и интерьера со скидками
-                                        <span>до 50%</span>
-                                    </p>
-                                </div>
-                                <a href="#" class="banner__btn">
-                                    <span>В каталог</span>
-                                    <img src="img/banner__arrow.svg" alt="Перейти">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner__slide">
-                            <img src="img/banner_1.jpg" alt="Баннер 1" class="banner__img">
-                            <div class="banner__info">
-                                <div class="banner__text">
-                                    <h4 class="banner__title">
-                                        Обновление раздела
-                                        <span>распродажа</span>
-                                    </h4>
-                                    <div class="section__divider"></div>
-                                    <p class="banner__description">
-                                        Более 500 предметов мебели и интерьера со скидками
-                                        <span>до 50%</span>
-                                    </p>
-                                </div>
-                                <a href="#" class="banner__btn">
-                                    <span>В каталог</span>
-                                    <img src="img/banner__arrow.svg" alt="Перейти">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="banner__slide">
-                            <img src="img/banner_1.jpg" alt="Баннер 1" class="banner__img">
-                            <div class="banner__info">
-                                <div class="banner__text">
-                                    <h4 class="banner__title">
-                                        Обновление раздела
-                                        <span>распродажа</span>
-                                    </h4>
-                                    <div class="section__divider"></div>
-                                    <p class="banner__description">
-                                        Более 500 предметов мебели и интерьера со скидками
-                                        <span>до 50%</span>
-                                    </p>
-                                </div>
-                                <a href="#" class="banner__btn">
-                                    <span>В каталог</span>
-                                    <img src="img/banner__arrow.svg" alt="Перейти">
-                                </a>
-                            </div>
-                        </div>
+                <section class="section content-header">
+                    <div class="content-header__breadcrumbs">
+                        <a href="#">Главная</a>
+                        <a href="#">Мебель</a>
+                        <a href="#">Мягкая мебель</a>
                     </div>
+                    <div class="content-header__divider"></div>
+                    <h1 class="content-header__h1">Мягкая мебель</h1>
+                    <span class="content-header__description">26 540 товаров</span>
+                    <div class="content-header__divider"></div>
                 </section>
-                <section class="section news-cards">
-                    <div class="news-cards__grid">
-                        <a href="#" class="news-cards__card">
-                            <img src="img/news_cards_1.jpg" alt="Новый сайт" class="news-cards__img">
-                            <div class="news-cards__info">
-                                <div class="news-cards__text">
-                                    <h4 class="news-cards__title">Новый сайт</h4>
-                                    <p class="news-cards__description">Теперь удобнее, быстрее, больше</p>
-                                </div>
-                                <div class="news-cards__btn">
-                                    <span>подробнее</span>
-                                    <img src="img/news_cards_arrow.svg" alt="Перейти">
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="news-cards__card">
-                            <img src="img/news_cards_2.jpg" alt="Работаем с дизайнерами" class="news-cards__img">
-                            <div class="news-cards__info">
-                                <div class="news-cards__text">
-                                    <h4 class="news-cards__title">Работаем с дизайнерами</h4>
-                                    <p class="news-cards__description">Специальные условия для дизайнеров.</p>
-                                </div>
-                                <div class="news-cards__btn">
-                                    <span>подробнее</span>
-                                    <img src="img/news_cards_arrow.svg" alt="Перейти">
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="news-cards__card">
-                            <img src="img/news_cards_3.jpg" alt="Cкидки на кухни neoсмавpoliscasa" class="news-cards__img">
-                            <div class="news-cards__info">
-                                <div class="news-cards__text">
-                                    <h4 class="news-cards__title">Cкидки на кухни neoсмавpoliscasa</h4>
-                                    <p class="news-cards__description">Скидки до 15% до конца марта.</p>
-                                </div>
-                                <div class="news-cards__btn">
-                                    <span>подробнее</span>
-                                    <img src="img/news_cards_arrow.svg" alt="Перейти">
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="news-cards__card">
-                            <img src="img/news_cards_1.jpg" alt="Новый сайт" class="news-cards__img">
-                            <div class="news-cards__info">
-                                <div class="news-cards__text">
-                                    <h4 class="news-cards__title">Новый сайт</h4>
-                                    <p class="news-cards__description">Теперь удобнее, быстрее, больше</p>
-                                </div>
-                                <div class="news-cards__btn">
-                                    <span>подробнее</span>
-                                    <img src="img/news_cards_arrow.svg" alt="Перейти">
-                                </div>
-                            </div>
-                        </a>
+                <section class="section catalog-search">
+                    <form class="catalog-search__form">
+                        <input type="text" name="search" placeholder="Поиск по каталогу" required>
+                        <button type="submit"></button>
+                    </form>
+                </section>
+                <section class="section list-with-pagination">
+                    <div class="list-with-pagination__header">
+                        <div class="list-with-pagination__pagination">
+                            <a href="#" class="list-with-pagination__arrow">
+                                <img src="img/arrow_left.svg" alt="Предыдущая страница">
+                            </a>
+                            <a href="#" class="list-with-pagination__page-number">1</a>
+                            <a href="#" class="list-with-pagination__page-number active">2</a>
+                            <a href="#" class="list-with-pagination__page-number">3</a>
+                            <a href="#" class="list-with-pagination__page-number">4</a>
+                            <a href="#" class="list-with-pagination__page-number">...</a>
+                            <a href="#" class="list-with-pagination__page-number">342</a>
+                            <a href="#" class="list-with-pagination__arrow">
+                                <img src="img/arrow_right.svg" alt="Следующая страница">
+                            </a>
+                        </div>
+                        <button class="list-with-pagination__filter">
+                            <img src="img/filter.svg" alt="Фильтрация поиска">
+                            <span>Фильтрация поиска</span>
+                        </button>
                     </div>
-                    <a href="#" class="section__view-all news-cards__all">
-                        <span>Все новости и акции</span>
-                        <img src="img/news_cards_arrow.svg" alt="Перейти">
-                    </a>
-                </section>
-                <section class="section advantages">
-                    <div class="advantages__divider"></div>
-                    <div class="advantages__container">
-                        <div class="advantages__item">
-                            <img src="img/advantages_item.svg" alt="100% эксклюзив">
-                            <h4 class="advantages__title">100% эксклюзив</h4>
-                            <p class="advantages__description">
-                                Мебель из Италии производится с учетом всех нестандартных запросов клиента, а все
-                                представленные коллекции выпускаются ограниченными партиями.
-                            </p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="img/advantages_item.svg" alt="100% эксклюзив">
-                            <h4 class="advantages__title">Доставка и сборка</h4>
-                            <p class="advantages__description">
-                                Мастера «Юнион» готовы не только продемонстрировать сертификаты о стажировке в Италии
-                                и Испании, но и собрать мебель в комфортных для вас условиях.
-                            </p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="img/advantages_item.svg" alt="100% эксклюзив">
-                            <h4 class="advantages__title">100% эксклюзив</h4>
-                            <p class="advantages__description">
-                                Мебель из Италии производится с учетом всех нестандартных запросов клиента, а все
-                                представленные коллекции выпускаются ограниченными партиями.
-                            </p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="img/advantages_item.svg" alt="100% эксклюзив">
-                            <h4 class="advantages__title">Доставка и сборка</h4>
-                            <p class="advantages__description">
-                                Мастера «Юнион» готовы не только продемонстрировать сертификаты о стажировке в Италии
-                                и Испании, но и собрать мебель в комфортных для вас условиях.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="section sale">
-                    <h2 class="section__h2">Мебель со скидками</h2>
-                    <div class="section__divider"></div>
-                    <p class="section__description sale__description">Коллекции мебели со скидками до 50%</p>
-                    <div class="furniture-list sale__furniture-list">
+                    <div class="furniture-list list-with-pagination__furniture-list">
                         <div class="furniture-list__item sale__item">
                             <div class="furniture-list__slider">
                                 <div class="furniture-list__slide">
@@ -1729,7 +1565,334 @@
                                 <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
                                 <div class="furniture-list__footer">
                                     <span class="furniture-list__vendor-code">Арт.: 99429</span>
-                                    <span class="furniture-list__presence missing">Нет в наличии</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_2.jpg" alt="Слайд 1">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_3.jpg" alt="Слайд 3">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone Кухня Энли Woodstone Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_3.jpg" alt="Слайд 1">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_2.jpg" alt="Слайд 2">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_4.jpg" alt="Слайд 1">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_2.jpg" alt="Слайд 2">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_2.jpg" alt="Слайд 2">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_3.jpg" alt="Слайд 3">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone Кухня Энли Woodstone Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_2.jpg" alt="Слайд 2">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_3.jpg" alt="Слайд 3">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone Кухня Энли Woodstone Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
+                                    <div class="furniture-list__bottom">
+                                        <div class="furniture-list__price">
+                                            <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                            <div class="furniture-list__price-divider"></div>
+                                            <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                        </div>
+                                        <button class="furniture-list__cart"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="furniture-list__sale">
+                                <span>-20%</span>
+                            </div>
+                        </div>
+                        <div class="furniture-list__item sale__item">
+                            <div class="furniture-list__slider">
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_2.jpg" alt="Слайд 2">
+                                </div>
+                                <div class="furniture-list__slide">
+                                    <img src="img/furniture_list_3.jpg" alt="Слайд 3">
+                                </div>
+                            </div>
+                            <div class="furniture-list__info">
+                                <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                                <div class="furniture-list__footer">
+                                    <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                    <span class="furniture-list__presence">В наличии</span>
                                     <div class="furniture-list__bottom">
                                         <div class="furniture-list__price">
                                             <span class="furniture-list__current-price">от 148 345 ₽</span>
@@ -1820,45 +1983,282 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="section__view-all sale__all">
-                        <span>Посмотреть все товары распродажи</span>
-                        <img src="img/news_cards_arrow.svg" alt="Перейти">
-                    </a>
-                </section>
-                <section class="section partners">
-                    <div class="partners__slider">
-                        <img src="img/partners_1.jpg" alt="Партнер 1">
-                        <img src="img/partners_2.jpg" alt="Партнер 2">
-                        <img src="img/partners_3.jpg" alt="Партнер 3">
-                        <img src="img/partners_4.jpg" alt="Партнер 4">
-                        <img src="img/partners_5.jpg" alt="Партнер 5">
-                        <img src="img/partners_1.jpg" alt="Партнер 1">
-                        <img src="img/partners_2.jpg" alt="Партнер 2">
-                        <img src="img/partners_3.jpg" alt="Партнер 3">
+                    <div class="list-with-pagination__footer">
+                        <div class="clearfix"></div>
+                        <a href="#" class="list-with-pagination__more">Показать еще</a>
+                        <div class="list-with-pagination__pagination">
+                            <a href="#" class="list-with-pagination__arrow">
+                                <img src="img/arrow_left.svg" alt="Предыдущая страница">
+                            </a>
+                            <a href="#" class="list-with-pagination__page-number">1</a>
+                            <a href="#" class="list-with-pagination__page-number active">2</a>
+                            <a href="#" class="list-with-pagination__page-number">3</a>
+                            <a href="#" class="list-with-pagination__page-number">4</a>
+                            <a href="#" class="list-with-pagination__page-number">...</a>
+                            <a href="#" class="list-with-pagination__page-number">342</a>
+                            <a href="#" class="list-with-pagination__arrow">
+                                <img src="img/arrow_right.svg" alt="Следующая страница">
+                            </a>
+                        </div>
                     </div>
                 </section>
-                <section class="section collections">
-                    <h2 class="section__h2">Коллекции</h2>
-                    <div class="section__divider"></div>
-                    <div class="collections__grid">
-                        <a href="#" class="collections__item">
-                            <img src="img/collections_1.jpg" alt="Кухня Энли Woodstone">
-                            <span>Кухня Энли Woodstone</span>
-                        </a>
-                        <a href="#" class="collections__item">
-                            <img src="img/collections_2.jpg" alt="Кухня Энли Woodstone">
-                            <span>Кухня Энли Woodstone</span>
-                        </a>
-                        <a href="#" class="collections__item">
-                            <img src="img/collections_3.jpg" alt="Кухня Энли Woodstone">
-                            <span>Кухни VIRS</span>
-                        </a>
-                        <a href="#" class="collections__item">
-                            <img src="img/collections_4.jpg" alt="Кухня Энли Woodstone">
-                            <span>Сантехника ведущих Европейских фабрик</span>
-                        </a>
-                    </div>
-                </section>
+                <div class="filter">
+                    <button class="filter__close"></button>
+                    <form class="filter__inner">
+                        <button type="button" class="filter__header">
+                            <span>Сортировка</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="radio" name="sort" value="По цене (убывание)">
+                                <span class="filter__fake-radio"></span>
+                                <span class="filter__label">По цене (убывание)</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="radio" name="sort" value="По популярности (убывание)">
+                                <span class="filter__fake-radio"></span>
+                                <span class="filter__label">По популярности (убывание)</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="radio" name="sort" value="По популярности (возрастание)">
+                                <span class="filter__fake-radio"></span>
+                                <span class="filter__label">По популярности (возрастание)</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="radio" name="sort" value="По алфавиту (возрастание)">
+                                <span class="filter__fake-radio"></span>
+                                <span class="filter__label">По алфавиту (возрастание)</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="radio" name="sort" value="По алфавиту (возрастание)">
+                                <span class="filter__fake-radio"></span>
+                                <span class="filter__label">По алфавиту (возрастание)</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Цена</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <div class="filter__price-values">
+                                <input class="filter__min" name="price-min" value="1000 руб." disabled>
+                                <input class="filter__max" name="price-max" value="1000000 руб." disabled>
+                            </div>
+                            <div class="filter__price"></div>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Предмет</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="item" value="Какой-то предмет 1">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то предмет 1</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="item" value="Какой-то предмет 2">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то предмет 2</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="item" value="Какой-то предмет 3">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то предмет 3</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Страна</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="country" value="Россия">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Россия</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="country" value="Италия">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Италия</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="country" value="Франция">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Франция</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Бренд</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 1">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 1</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 2">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 2</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 3">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 3</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 1">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 1</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 2">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 2</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 3">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 3</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 1">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 1</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 2">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 2</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="brand" value="Какой-то бренд 3">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Какой-то бренд 3</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Товар на распродаже</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="sale" value="Да">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Да</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="sale" value="Нет">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Нет</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Материал каркаса</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="material-karkas" value="Дерево">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Дерево</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="material" value="Металл">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Металл</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Материал обивки</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="material-obivka" value="Шелк">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Шелк</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="material" value="Шелк">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Шелк</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Стиль</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="style" value="Ренессанс">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Ренессанс</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="style" value="Готика">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Готика</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Формат стола</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="format" value="Простой">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Простой</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="format" value="Складной">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Складной</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="filter__header">
+                            <span>Цвет</span>
+                            <img src="img/triangle.svg" alt="Раскрыть">
+                        </button>
+                        <div class="filter__dropdown">
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="color" value="Черный">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Черный</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="color" value="Белый">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Белый</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="color" value="Оранжевый">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Оранжевый</span>
+                            </label>
+                            <label class="filter__checkbox">
+                                <input type="checkbox" name="color" value="Красный">
+                                <span class="filter__fake-checkbox"></span>
+                                <span class="filter__label">Красный</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="filter__btn">Показать</button>
+                    </form>
+                </div>
             </main>
 
             <footer class="footer">
@@ -1926,6 +2326,7 @@
             <div class="mount catalog-mount"></div>
         </div>
     </div>
+    <div class="mount filter-mount"></div>
     <div class="modal callback-modal">
         <div class="modal__mount"></div>
         <div class="modal__border">

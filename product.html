@@ -1,0 +1,1968 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Берлони</title>
+
+    <!--Стили-->
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Скрипты-->
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/imask.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__logo">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Логотип компании">
+        </a>
+    </div>
+    <div class="header__container">
+        <div class="header__top">
+            <a href="index.html" class="header__mobile-logo">
+                <img src="img/logo.png" alt="Логотип компании">
+            </a>
+            <nav class="header__nav">
+                <ul>
+                    <li>
+                        <a href="#">Наши услуги</a>
+                        <div class="header__nav-dropdown">
+                            <a href="#">Доставка</a>
+                            <a href="#">Гарантия</a>
+                            <a href="#">Оплата</a>
+                            <a href="#">Сборка</a>
+                            <a href="#">Оформление заказа</a>
+                            <a href="#">Услуги дизайнера</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Компания</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                        <div class="header__nav-dropdown">
+                            <a href="#">Доставка</a>
+                            <a href="#">Гарантия</a>
+                            <a href="#">Оплата</a>
+                            <a href="#">Сборка</a>
+                            <a href="#">Оформление заказа</a>
+                            <a href="#">Услуги дизайнера</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Сотрудничество с дизайнерами</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <a href="tel:8 (831) 278-40-30" class="header__phone">
+                    <span>8 (831)</span> 278-40-30
+                </a>
+                <div class="header__contacts-divider"></div>
+                <button class="header__callback">Заказать звонок</button>
+                <button class="header__burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <button class="header__catalog-toggle">
+                <img src="img/header_catalog.svg" alt="Открыть каталог">
+                <span>Каталог</span>
+            </button>
+            <form class="header__search">
+                <input type="text" name="header__search" placeholder="Поиск по каталогу" required>
+                <button type="submit">
+                    <img src="img/header_search.svg" alt="Найти">
+                </button>
+            </form>
+            <div class="header__icon-link">
+                <a href="#">
+                    <img src="img/header_favorite.svg" alt="Избранное">
+                    <div class="header__count"><span>12</span></div>
+                </a>
+            </div>
+            <div class="header__icon-link">
+                <a href="#">
+                    <img src="img/header_cart.svg" alt="Корзина">
+                    <div class="header__count"><span>4</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="layout">
+    <div class="catalog-nav">
+        <button class="catalog-nav__close"></button>
+        <ul>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_1.svg" alt="В наличии">
+                    <span>В наличии</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_2.svg" alt="Распродажа">
+                    <span>Распродажа</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_3.svg" alt="Мебель">
+                    <span>Мебель</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_4.svg" alt="Техника для кухни">
+                    <span>Техника для кухни</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_5.svg" alt="Бытовая техника для дома">
+                    <span>Бытовая техника для дома</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_6.svg" alt="ТВ и аудио">
+                    <span>ТВ и аудио</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_7.svg" alt="Аксессуары">
+                    <span>Аксессуары</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_8.svg" alt="Уличная мебель">
+                    <span>Уличная мебель</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+            <li class="catalog-nav__category">
+                <a href="#">
+                    <img src="img/catalog_nav_9.svg" alt="В наличии">
+                    <span>Офисная мебель</span>
+                </a>
+            </li>
+            <li class="catalog-nav__dropdown">
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Диванетки</a>
+                    <a href="#" class="catalog-nav__link">Кресла-качалки</a>
+                    <a href="#" class="catalog-nav__link">Кушетки</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Скамьи-Контейнеры</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Спальня</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Прикроватные тумбы</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Туалетные столики</a>
+                    <a href="#" class="catalog-nav__link">Модули кроватей</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Постельные принадлежности</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Гостиная</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Мягкая мебель</a>
+                    <a href="#" class="catalog-nav__link">Журнальные столы</a>
+                    <a href="#" class="catalog-nav__link">Консоли</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столы</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                    <a href="#" class="catalog-nav__link">Обеденные столы</a>
+                    <a href="#" class="catalog-nav__link">Письменные столы</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Сервировочные столы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Столовая</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                    <a href="#" class="catalog-nav__link">Кофейные столики</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Тумбы ТВ</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Буфеты</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кухня</a>
+                    <a href="#" class="catalog-nav__link">Кухни</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Столы обеденные</a>
+                    <a href="#" class="catalog-nav__link">Столовые группы</a>
+                    <a href="#" class="catalog-nav__link">Столы сервировочные</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Прихожие</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Банкетки</a>
+                    <a href="#" class="catalog-nav__link">Обувницы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Подставки</a>
+                    <a href="#" class="catalog-nav__link">Подставки для зонтов</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Кабинет</a>
+                    <a href="#" class="catalog-nav__link">Столы письменные</a>
+                    <a href="#" class="catalog-nav__link">Библиотеки</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кресла</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Бары</a>
+                    <a href="#" class="catalog-nav__link">Витрины</a>
+                    <a href="#" class="catalog-nav__link">Диваны</a>
+                    <a href="#" class="catalog-nav__link">Полукресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стеллажи</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Винотеки</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Креденции</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Детская</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Шкафы</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Комоды</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Ванные комнаты</a>
+                    <a href="#" class="catalog-nav__link">Шкафы и тумбы</a>
+                    <a href="#" class="catalog-nav__link">Комплекты</a>
+                    <a href="#" class="catalog-nav__link">Аксессуары для ванной комнаты</a>
+                    <a href="#" class="catalog-nav__link">Тумбы под раковину</a>
+                    <a href="#" class="catalog-nav__link">Пеналы</a>
+                    <a href="#" class="catalog-nav__link">Зеркала</a>
+                    <a href="#" class="catalog-nav__link">Подсветка</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Домашние гардеробные</a>
+                    <a href="#" class="catalog-nav__link">Германия</a>
+                    <a href="#" class="catalog-nav__link">Италия</a>
+                </div>
+                <div class="catalog-nav__subcategory">
+                    <a href="#" class="catalog-nav__header">Группы товаров</a>
+                    <a href="#" class="catalog-nav__link">Шкафы, стеллажи и витрины</a>
+                    <a href="#" class="catalog-nav__link">Консоли, бюро, комоды</a>
+                    <a href="#" class="catalog-nav__link">Диваны и кресла</a>
+                    <a href="#" class="catalog-nav__link">Стулья</a>
+                    <a href="#" class="catalog-nav__link">Стенки</a>
+                    <a href="#" class="catalog-nav__link">Кровати</a>
+                    <a href="#" class="catalog-nav__link">Полки</a>
+                    <a href="#" class="catalog-nav__link">Тумбы и подставки</a>
+                    <a href="#" class="catalog-nav__link">Часы</a>
+                    <a href="#" class="catalog-nav__link">Пуфы</a>
+                    <a href="#" class="catalog-nav__link">Матрасы и решетки</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="layout__content">
+        <main class="main">
+            <section class="section content-header">
+                <div class="content-header__breadcrumbs">
+                    <a href="#">Главная</a>
+                    <a href="#">Мебель</a>
+                    <a href="#">Мягкая мебель</a>
+                    <a href="#">Кресла</a>
+                    <a href="#">Польша</a>
+                    <a href="#">Major Кресло ткань горчичный</a>
+                </div>
+                <div class="content-header__divider"></div>
+                <h1 class="content-header__h1">Major Кресло ткань горчичный</h1>
+                <p class="content-header__description">Артикул: MAJORZ</p>
+                <div class="content-header__divider"></div>
+            </section>
+            <section class="section product">
+                <div class="product__gallery">
+                    <div class="product__slider">
+                        <div class="product__slide">
+                            <img src="img/product_1.jpg" alt="Слайд 1">
+                        </div>
+                        <div class="product__slide">
+                            <img src="img/product_1.jpg" alt="Слайд 2">
+                        </div>
+                        <div class="product__slide">
+                            <img src="img/product_1.jpg" alt="Слайд 3">
+                        </div>
+                        <div class="product__slide">
+                            <img src="img/product_1.jpg" alt="Слайд 4">
+                        </div>
+                        <div class="product__slide">
+                            <img src="img/product_1.jpg" alt="Слайд 5">
+                        </div>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <div class="product__price">
+                        <span>от 148 345 ₽ |</span>
+                        <del>от 148 345 ₽</del>
+                    </div>
+                    <div class="product__additional">
+                        <span class="product__presence missing">Нет в наличии</span>
+                        <button class="product__additional-btn product__delivery">
+                            <img src="img/question.svg" alt="Доставка">
+                            <span>Доставка</span>
+                        </button>
+                        <button class="product__additional-btn product__payment">
+                            <img src="img/question.svg" alt="Оплата">
+                            <span>Оплата</span>
+                        </button>
+                    </div>
+                    <button class="product__cart">В корзину</button>
+                    <p class="product__description">
+                        На сайте представлены не все коллекции!<br>
+                        Если Вы не нашли то, что Вам нужно – сообщите и мы подберем!<br>
+                        <br>
+                        Цена действительна только для интернет-магазина и может отличаться от цен в розничных магазинах
+                    </p>
+                </div>
+                <div class="product__table">
+                    <div class="product__table-item">
+                        <span class="product__table-name">Артикул</span>
+                        <span class="product__table-value">stk21130-N116</span>
+                    </div>
+                    <div class="product__table-item">
+                        <span class="product__table-name">Материал обивки</span>
+                        <span class="product__table-value">Ткань</span>
+                    </div>
+                    <div class="product__table-item">
+                        <span class="product__table-name">Страна</span>
+                        <span class="product__table-value">Португалия</span>
+                    </div>
+                    <div class="product__table-item">
+                        <span class="product__table-name">Размеры (мм)</span>
+                        <span class="product__table-value">700 х 820 х 870</span>
+                    </div>
+                    <div class="product__table-item">
+                        <span class="product__table-name">Производитель</span>
+                        <span class="product__table-value">ANTIKA</span>
+                    </div>
+                    <div class="product__table-item">
+                        <span class="product__table-name">Стиль</span>
+                        <span class="product__table-value">Классический</span>
+                    </div>
+                    <div class="product__table-item">
+                        <span class="product__table-name">Цвет обивки</span>
+                        <span class="product__table-value">Бордовый</span>
+                    </div>
+                    <div class="product__table-item">
+                        <span class="product__table-name">Цвет</span>
+                        <span class="product__table-value">Бордовый, Коричневый</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section variations">
+                <h2 class="section__h2">Вариации мебели</h2>
+                <div class="furniture-list variations__furniture-list">
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_2.jpg" alt="Слайд 2">
+                            </div>
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_3.jpg" alt="Слайд 3">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone Кухня Энли Woodstone Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section might-like">
+                <h2 class="section__h2">Вам может понравиться</h2>
+                <div class="furniture-list might-like__furniture-list">
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_2.jpg" alt="Слайд 2">
+                            </div>
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_3.jpg" alt="Слайд 3">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone Кухня Энли Woodstone Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                    <div class="furniture-list__item sale__item">
+                        <div class="furniture-list__slider">
+                            <div class="furniture-list__slide">
+                                <img src="img/furniture_list_1.jpg" alt="Слайд 1">
+                            </div>
+                        </div>
+                        <div class="furniture-list__info">
+                            <a href="#" class="furniture-list__title">Кухня Энли Woodstone</a>
+                            <div class="furniture-list__footer">
+                                <span class="furniture-list__vendor-code">Арт.: 99429</span>
+                                <span class="furniture-list__presence">В наличии</span>
+                                <div class="furniture-list__bottom">
+                                    <div class="furniture-list__price">
+                                        <span class="furniture-list__current-price">от 148 345 ₽</span>
+                                        <div class="furniture-list__price-divider"></div>
+                                        <span class="furniture-list__old-price">от <del>148 345 ₽</del></span>
+                                    </div>
+                                    <button class="furniture-list__cart"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture-list__sale">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__buttons">
+                <a href="#" class="footer__btn">
+                    <img src="img/footer_inst.svg" alt="Наш инстаграм">
+                </a>
+                <a href="#" class="footer__btn">
+                    <img src="img/footer_vk.svg" alt="Наш ВКонтакте">
+                </a>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h3 class="footer__header">Наши услуги</h3>
+                    <div class="footer__divider"></div>
+                    <ul class="footer__ul">
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Сборка</a></li>
+                        <li><a href="#">Оформление заказа</a></li>
+                        <li><a href="#">Услуги дизайнера</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__header">Компания</h3>
+                    <div class="footer__divider"></div>
+                    <ul class="footer__ul">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Сертификация</a></li>
+                        <li><a href="#">Сотрудничество с дизайнерами</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__header">Каталог</h3>
+                    <div class="footer__divider"></div>
+                    <ul class="footer__ul">
+                        <li><a href="#">Типы помещений</a></li>
+                        <li><a href="#">Группы товаров</a></li>
+                        <li><a href="#">Стили</a></li>
+                        <li><a href="#">Страны изготовления</a></li>
+                        <li><a href="#">Фабрики</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__header">Контакты</h3>
+                    <div class="footer__divider"></div>
+                    <ul class="footer__ul">
+                        <li><a href="#">Публичная оферта</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <a href="index.html" class="footer__logo">
+                        <img src="img/logo.png" alt="Логотип компании">
+                    </a>
+                    <a href="tel:8 (831) 278-40-30" class="footer__phone">8 (831) 278-40-30</a>
+                    <a href="tel:8 (831) 428-60-09" class="footer__phone">8 (831) 428-60-09</a>
+                    <p class="footer__address">603006, г. Н. Новгород, ул. Максима Горького, 220 - 1 этаж</p>
+                </div>
+            </div>
+        </footer>
+        <div class="mount catalog-mount"></div>
+    </div>
+</div>
+<div class="modal callback-modal">
+    <div class="modal__mount"></div>
+    <div class="modal__border">
+        <div class="modal__body">
+            <button class="modal__close"></button>
+            <div class="modal__divider"></div>
+            <h2 class="modal__title">Заказать звонок</h2>
+            <div class="modal__divider"></div>
+            <form class="callback-modal__form">
+                <label>Ваше имя<span>*</span>:</label>
+                <input type="text" name="name" required>
+                <label>Контактный телефон<span>*</span>:</label>
+                <input type="text" name="phone" required>
+                <div class="callback-modal__btn">
+                    <button type="submit">Отправить</button>
+                    <p>
+                        Нажимая кнопку вы соглашаетесь согласие на
+                        <a href="#">обработку персональных данных</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal delivery-modal">
+    <div class="modal__mount"></div>
+    <div class="modal__border">
+        <div class="modal__body">
+            <button class="modal__close"></button>
+            <div class="modal__divider"></div>
+            <h2 class="modal__title">Доставка</h2>
+            <div class="modal__divider"></div>
+            <p class="modal__inner-text">Какая-то информация о доставке</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal payment-modal">
+    <div class="modal__mount"></div>
+    <div class="modal__border">
+        <div class="modal__body">
+            <button class="modal__close"></button>
+            <div class="modal__divider"></div>
+            <h2 class="modal__title">Оплата</h2>
+            <div class="modal__divider"></div>
+            <p class="modal__inner-text">Какая-то информация об оплате</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

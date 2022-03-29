@@ -6,13 +6,15 @@ $('.header__burger').on('click', function () {
 
 // Кнопка "Каталог" в шапке
 $('.header__catalog-toggle').on('click', function () {
+    $('.catalog-mount').addClass('active')
     $('.catalog-nav').addClass('active')
     $('body').addClass('no-scroll')
 })
 
 // Закрытие каталога
-$('.catalog-nav__close').on('click', function () {
-    $(this).parent().removeClass('active')
+$('.catalog-nav__close, .catalog-mount').on('click', function () {
+    $('.catalog-mount').removeClass('active')
+    $('.catalog-nav').removeClass('active')
     $('body').removeClass('no-scroll')
 })
 

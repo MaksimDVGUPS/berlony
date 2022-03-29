@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
 }
 
 /* Убираем внутренние отступы */
@@ -226,15 +228,16 @@ footer {
 }
 
 .layout {
-  display: grid;
-  grid-template-columns: 348px 1fr;
+  display: flex;
+  flex-shrink: 0;
   min-height: calc(100vh - 100.52px);
 
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: calc(100vw - 348px);
+    padding-left: 348px;
     position: relative;
+    width: 100%;
   }
 }
 
@@ -309,6 +312,7 @@ footer {
   border-bottom: 1px solid $red;
   box-shadow: 0px 1px 9px 6px rgba(0, 0, 0, 0.25);
   display: grid;
+  flex-shrink: 0;
   grid-template-columns: 348px 1fr;
   position: relative;
 
@@ -449,6 +453,12 @@ footer {
     line-height: 14px;
     text-align: center;
     letter-spacing: 0.1em;
+    transition: .3s;
+
+    &:hover {
+      background-color: #AD000D;
+      background-position: right 2px top;
+    }
   }
 
   &__burger {
@@ -546,11 +556,22 @@ footer {
 
 .catalog-nav {
   background: url("../img/catalog_nav_bg.jpg");
-  border-right: 1px solid #DADADA;
-  height: 100%;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 348px;
+  z-index: 100;
+
+  &__logo {
+    display: none;
+  }
 
   ul {
-    margin: 35px 0 0;
+    margin: 0;
+    padding: 35px 0 0 !important;
     padding: 0;
   }
 
@@ -581,6 +602,31 @@ footer {
   }
 
   @media screen and (min-width: 1600.01px) {
+    & > ul {
+      border-right: 1px solid #DADADA;
+      display: block;
+      height: 100%;
+    }
+
+    &__logo {
+      align-items: center;
+      background: url(../img/header_bg.jpg) repeat-x;
+      border-bottom: 1px solid #E10000;
+      border-right: 1px solid rgba(218, 218, 218, 0.2);
+      box-shadow: 0px 1px 9px 6px rgb(0 0 0 / 25%);
+      display: flex;
+      justify-content: center;
+      height: 100.52px;
+
+      a {
+        display: block;
+
+        img {
+          width: 205px;
+        }
+      }
+    }
+
     &__close {
       display: none;
     }
@@ -631,10 +677,11 @@ footer {
       flex-direction: column;
       flex-wrap: wrap;
       padding: 42px 0 0 52px;
-      position: absolute;
-      top: 100.88px;
+      position: fixed;
+      top: 0;
       left: 348px;
-      max-height: calc(100vh - 100.88px);
+      bottom: 0;
+      max-height: 100vh;
       width: calc(100vw - 348px);
       z-index: 100;
     }
@@ -860,7 +907,8 @@ footer {
   }
 
   &__slider {
-    width: calc((100vw - 348px - 40px - 63px) / 4);
+    flex-shrink: 0;
+    height: calc((100vw - 348px - 40px - 63px) / 4 * 0.788);
 
     .slick-dots {
       width: 100%;
@@ -884,10 +932,14 @@ footer {
         display: none;
       }
     }
+
+    .slick-track, .slick-list {
+      height: 100%;
+    }
   }
 
   &__slide {
-    height: calc((100vw - 348px - 40px - 63px) / 4 * 0.788);
+    height: 100%;
 
     img {
       object-fit: cover;
@@ -922,13 +974,10 @@ footer {
     border: 1px solid #DADADA;
     border-top: none;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 22px;
-    height: 100%;
-    height: -moz-available;          /* WebKit игнор. */
-    height: -webkit-fill-available;  /* Mozilla игнор. */
-    height: fill-available;
   }
 
   &__title {
@@ -1007,11 +1056,18 @@ footer {
   }
 
   &__cart {
-    background: url("../img/furniture_list_cart.svg") no-repeat;
-    background-size: contain;
-    border: none;
+    background: url("../img/furniture_list_cart.svg") no-repeat left 7px top 8px;
+    background-size: 20px 21px;
+    border: 1px solid #55934B;
+    border-radius: 5px;
     height: 39px;
     width: 39px;
+    transition: .3s;
+
+    &:hover {
+      background-color: #55934B;
+      background-image: url("../img/furniture_list_cart_white.svg");
+    }
   }
 }
 
@@ -1139,21 +1195,32 @@ footer {
     height: 287px;
     position: relative;
     text-decoration: none;
+    overflow: hidden;
 
     &:nth-child(4) {
       display: none;
     }
 
     &:hover {
-      .news-cards__btn {
-        background: $red;
-
-        span {
-          color: #FFFFFF;
+      .news-cards {
+        &__img {
+          transform: scale(1.05);
         }
 
-        img {
-          filter: invert(100%) sepia(100%) saturate(7%) hue-rotate(168deg) brightness(102%) contrast(106%);
+        &__info {
+          background: rgba(#000000, .7);
+        }
+
+        &__btn {
+          background: $red;
+
+          span {
+            color: #FFFFFF;
+          }
+
+          img {
+            filter: invert(100%) sepia(100%) saturate(7%) hue-rotate(168deg) brightness(102%) contrast(106%);
+          }
         }
       }
     }
@@ -1163,6 +1230,7 @@ footer {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    transition: .3s;
   }
 
   &__info {
@@ -1176,6 +1244,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
+    transition: .3s;
   }
 
   &__title {
@@ -1310,12 +1379,21 @@ footer {
     display: block;
     position: relative;
     height: 287px;
+    overflow: hidden;
+
+    &:hover {
+      img {
+        opacity: .6;
+        transform: scale(1.05);
+      }
+    }
 
     img {
       opacity: .5;
       height: 100%;
       width: 100%;
       object-fit: cover;
+      transition: .3s;
     }
 
     span {
@@ -1752,11 +1830,8 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    flex-grow: 1;
     margin-top: 21px;
-    height: 100%;
-    height: -moz-available;
-    height: -webkit-fill-available;
-    height: fill-available;
   }
 
 
@@ -1778,6 +1853,7 @@ footer {
   &__footer {
     display: flex;
     justify-content: space-between;
+    margin-top: 21px;
 
     span {
       color: #959595;
@@ -2078,7 +2154,6 @@ footer {
 
   &__slider {
     position: relative;
-    width: calc(100vw - 348px - 40px - 45px - 480px - 56px);
 
     .slick-dots {
       margin-top: 2px;
@@ -2382,16 +2457,18 @@ footer {
 
 .filter {
   background: #FFFFFF;
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
+  transform: translateX(-100%);
+  transition: .3s;
   width: 348px;
   z-index: 1000;
 
   &.active {
-    display: block;
+    transform: translateX(0);
   }
 
   &__close {
@@ -2781,7 +2858,7 @@ footer {
       top: 100%;
       right: 0;
       transition: .3s;
-      transform: translateX(100%);
+      transform: translateX(calc(100% + 1px));
       max-width: max-content;
       width: 100%;
       z-index: 100;
@@ -2900,23 +2977,25 @@ footer {
 
     &__content {
       max-width: 100vw;
+      padding-left: 0;
     }
   }
 
   .catalog-nav {
-    display: none;
+    display: block;
     padding-bottom: 40px;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(-100%);
+    transition: .3s;
     z-index: 1000;
     max-height: 100vh;
     overflow: auto;
 
     &.active {
-      display: block;
+      transform: translateX(0);
     }
 
     &__close {
@@ -2991,10 +3070,6 @@ footer {
 
   .furniture-list {
     &__slider {
-      width: calc((100vw - 40px - 63px) / 4);
-    }
-
-    &__slide {
       height: calc((100vw - 40px - 63px) / 4 * 0.788);
     }
   }
@@ -3004,10 +3079,6 @@ footer {
   }
 
   .product {
-    &__slider {
-      width: calc(100vw - 40px - 45px - 480px - 56px);
-    }
-
     &__slide {
       height: calc((100vw - 40px - 45px - 480px - 56px) * 0.668);
     }
@@ -3094,10 +3165,6 @@ footer {
       padding: 10px 10px 15px;
     }
 
-    &__slider {
-      width: calc(100vw - 40px - 45px - 480px - 20px);
-    }
-
     &__slide {
       height: calc((100vw - 40px - 45px - 480px - 20px) * 0.668);
     }
@@ -3117,10 +3184,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
 
     &__slider {
-      width: calc((100vw - 40px - 21px) / 2);
-    }
-
-    &__slide {
       height: calc((100vw - 40px - 21px) / 2 * 0.788);
     }
   }
@@ -3157,10 +3220,6 @@ footer {
 
   .product {
     grid-template-columns: 1fr;
-
-    &__slider {
-      width: calc(100vw - 60px);
-    }
 
     &__slide {
       height: calc((100vw - 60px) * 0.668);
@@ -3326,6 +3385,10 @@ footer {
   .filter {
     width: 100%;
   }
+
+  .catalog-nav {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -3333,10 +3396,6 @@ footer {
     grid-template-columns: 1fr;
 
     &__slider {
-      width: calc(100vw - 40px);
-    }
-
-    &__slide {
       height: calc((100vw - 40px) * 0.788);
     }
   }

@@ -479,8 +479,8 @@ footer {
 .header__icon-link span {
   color: #FFFFFF;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 15px;
   position: absolute;
   top: 3px;
   left: 50%;
@@ -598,8 +598,8 @@ footer {
     top: 0;
     left: 348px;
     bottom: 0;
-    max-height: 100vh;
-    width: calc(100vw - 348px);
+    max-height: 87vh;
+    width: calc(96vw - 348px);
     z-index: 100;
   }
   .catalog-nav__subcategory {
@@ -2439,8 +2439,7 @@ footer {
     padding: 20px 20px 16px;
   }
   .header__nav {
-    background: url(../img/header_bg.jpg) repeat-x;
-    background-size: cover;
+    background: #131313;
     padding: 20px;
     position: absolute;
     top: 100%;
@@ -2466,8 +2465,13 @@ footer {
     text-align: right;
   }
   .header__nav li > a {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
+    color: #C1C1C1;
+    transition: 0.2s;
+  }
+  .header__nav li > a:hover {
+    color: #FFFFFF;
   }
   .header__nav li + li {
     margin-top: 15px;
@@ -2483,8 +2487,13 @@ footer {
     margin-top: 10px;
   }
   .header__nav-dropdown a {
-    font-size: 20px;
+    font-size: 17px;
     text-align: right;
+    color: #797979;
+    transition: 0.2s;
+  }
+  .header__nav-dropdown a:hover {
+    color: #FFFFFF;
   }
   .header__nav-dropdown a + a {
     margin-top: 5px;

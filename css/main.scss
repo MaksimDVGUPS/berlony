@@ -648,7 +648,7 @@ footer {
       }
 
       span {
-        color: #403939;
+        color: #a81818;
       }
     }
 
@@ -684,6 +684,8 @@ footer {
       max-height: 87vh;
       width: calc(96vw - 348px);
       z-index: 100;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     &__subcategory {
@@ -742,7 +744,7 @@ footer {
       }
 
       &:hover {
-        color: #4B4B4B;
+        color: #171717;
 
         &::before {
           opacity: 1;
@@ -3063,9 +3065,22 @@ footer {
       color: #606060;
       display: block;
       font-size: 18px;
-      line-height: 21px;
+      font-weight: 500;
+      line-height: 46px;
+      margin-bottom: 10px;
+      position: relative;
       text-decoration: none;
       width: fit-content;
+
+      &::after {
+        background: $red;
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 1px;
+        width: 80px;
+      }
     }
 
     &__link {
@@ -3398,7 +3413,7 @@ footer {
   }
 
   .catalog-nav {
-    width: 100%;
+    width: 70%;
   }
 }
 

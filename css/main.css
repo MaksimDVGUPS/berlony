@@ -570,7 +570,7 @@ footer {
     filter: brightness(0) saturate(100%) invert(16%) sepia(81%) saturate(4017%) hue-rotate(354deg) brightness(96%) contrast(85%);
   }
   .catalog-nav__category:hover span, .catalog-nav__category.active span {
-    color: #403939;
+    color: #a81818;
   }
   .catalog-nav__dropdown + .catalog-nav__category {
     position: relative;
@@ -601,6 +601,8 @@ footer {
     max-height: 87vh;
     width: calc(96vw - 348px);
     z-index: 100;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .catalog-nav__subcategory {
     margin: 0 52px 42px 0;
@@ -653,7 +655,7 @@ footer {
     width: 10.47px;
   }
   .catalog-nav__link:hover {
-    color: #4B4B4B;
+    color: #171717;
   }
   .catalog-nav__link:hover::before {
     opacity: 1;
@@ -2617,9 +2619,21 @@ footer {
     color: #606060;
     display: block;
     font-size: 18px;
-    line-height: 21px;
+    font-weight: 500;
+    line-height: 46px;
+    margin-bottom: 10px;
+    position: relative;
     text-decoration: none;
     width: fit-content;
+  }
+  .catalog-nav__header::after {
+    background: #E10000;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 1px;
+    width: 80px;
   }
   .catalog-nav__link {
     color: #7D7D7D;
@@ -2866,7 +2880,7 @@ footer {
   }
 
   .catalog-nav {
-    width: 100%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 580px) {

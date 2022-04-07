@@ -342,7 +342,7 @@ footer {
   line-height: 17px;
   text-decoration: none;
 }
-@media screen and (min-width: 1600.01px) {
+@media screen and (min-width: 1300.01px) {
   .header__nav-dropdown {
     background: #232323;
     box-shadow: inset 0px 3px 12px rgba(0, 0, 0, 0.44);
@@ -531,7 +531,7 @@ footer {
   line-height: 1;
   transition: 0.3s;
 }
-@media screen and (min-width: 1600.01px) {
+@media screen and (min-width: 1300.01px) {
   .catalog-nav > ul {
     border-right: 1px solid #DADADA;
     display: block;
@@ -585,14 +585,12 @@ footer {
     width: 85px;
   }
   .catalog-nav__category:hover + .catalog-nav__dropdown, .catalog-nav__category.active + .catalog-nav__dropdown, .catalog-nav__dropdown:hover {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   .catalog-nav__dropdown {
-    align-content: flex-start;
     background: #FFFFFF;
     display: none;
-    flex-direction: column;
-    flex-wrap: wrap;
     padding: 42px 0 0 52px;
     position: fixed;
     top: 0;
@@ -604,9 +602,12 @@ footer {
     overflow-x: hidden;
     overflow-y: auto;
   }
+  .catalog-nav__column {
+    height: fit-content;
+    padding-bottom: 42px;
+  }
   .catalog-nav__subcategory {
     margin: 0 52px 42px 0;
-    width: 224px;
   }
   .catalog-nav__header {
     color: #606060;
@@ -2427,6 +2428,82 @@ footer {
 }
 
 @media screen and (max-width: 1600px) {
+  .header__nav li {
+    padding-right: 18px;
+  }
+  .header__nav li + li {
+    padding-left: 18px;
+  }
+  .header__phone {
+    font-size: 18px;
+  }
+  .header__phone span {
+    font-size: 18px;
+  }
+
+  .banner .slick-dots {
+    left: 28px;
+    bottom: 28px;
+    transform: none;
+  }
+
+  .news-cards__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news-cards__card {
+    height: 220px;
+  }
+  .news-cards__card:nth-child(4) {
+    display: block;
+  }
+
+  .advantages__container {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .advantages__item {
+    margin: 0;
+  }
+
+  .furniture-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .furniture-list__slider {
+    height: calc((100vw - 348px - 40px - 21px) / 2 * 0.788);
+  }
+
+  .collections__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    padding: 36px 20px 70px;
+  }
+
+  .checkout {
+    grid-template-columns: 1fr;
+  }
+  .checkout__form {
+    order: 1;
+  }
+
+  .news-list__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news-list__img {
+    height: calc(((100vw - 348px - 40px - 33px) / 2 - 24px) * 0.739);
+  }
+
+  .product__table {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product__table-item:nth-child(n+3) {
+    margin-top: 1px;
+  }
+}
+@media screen and (max-width: 1300px) {
   .header {
     grid-template-columns: 1fr;
   }
@@ -2645,8 +2722,11 @@ footer {
     width: fit-content;
   }
 
+  .furniture-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .furniture-list__slider {
-    height: calc((100vw - 40px - 63px) / 4 * 0.788);
+    height: calc((100vw - 40px - 21px) / 4 * 0.788);
   }
 
   .news-list__img {
@@ -2664,36 +2744,26 @@ footer {
   .news-gallery__item {
     height: calc((100vw - 40px - 48px) / 4 * 0.722);
   }
+
+  .checkout {
+    grid-template-columns: 1fr 519px;
+  }
+  .checkout__cart {
+    order: unset;
+  }
+
+  .news-list__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .news-list__img {
+    height: calc(((100vw - 40px - 99px) / 4 - 24px) * 0.739);
+  }
 }
 @media screen and (max-width: 1200px) {
   .footer__grid {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1.5fr 1.5fr 1fr;
-  }
-
-  .news-cards__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .news-cards__card {
-    height: 220px;
-  }
-  .news-cards__card:nth-child(4) {
-    display: block;
-  }
-
-  .advantages__container {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  .advantages__item {
-    margin: 0;
-  }
-
-  .collections__grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .news-list__img {
@@ -2732,12 +2802,6 @@ footer {
   }
   .furniture-list__slider {
     height: calc((100vw - 40px - 21px) / 2 * 0.788);
-  }
-
-  .banner .slick-dots {
-    left: 28px;
-    bottom: 28px;
-    transform: none;
   }
 
   .checkout {

@@ -159,6 +159,18 @@ $('.might-like__furniture-list').slick({
     infinite: false,
     responsive: [
         {
+            breakpoint: 1600,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 1300,
+            settings: {
+                slidesToShow: 4
+            }
+        },
+        {
             breakpoint: 1050,
             settings: {
                 slidesToShow: 2

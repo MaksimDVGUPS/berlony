@@ -378,7 +378,7 @@ footer {
     }
   }
 
-  @media screen and (min-width: 1600.01px) {
+  @media screen and (min-width: 1300.01px) {
     &__nav-dropdown {
       background: #232323;
       box-shadow: inset 0px 3px 12px rgba(0, 0, 0, 0.44);
@@ -601,7 +601,7 @@ footer {
     }
   }
 
-  @media screen and (min-width: 1600.01px) {
+  @media screen and (min-width: 1300.01px) {
     & > ul {
       border-right: 1px solid #DADADA;
       display: block;
@@ -667,15 +667,13 @@ footer {
     }
 
     &__category:hover + &__dropdown, &__category.active + &__dropdown, &__dropdown:hover {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
     }
 
     &__dropdown {
-      align-content: flex-start;
       background: #FFFFFF;
       display: none;
-      flex-direction: column;
-      flex-wrap: wrap;
       padding: 42px 0 0 52px;
       position: fixed;
       top: 0;
@@ -688,9 +686,13 @@ footer {
       overflow-y: auto;
     }
 
+    &__column {
+      height: fit-content;
+      padding-bottom: 42px;
+    }
+
     &__subcategory {
       margin: 0 52px 42px 0;
-      width: 224px;
     }
 
     &__header {
@@ -2837,6 +2839,109 @@ footer {
 
 @media screen and (max-width: 1600px) {
   .header {
+    &__nav {
+      li {
+        padding-right: 18px;
+      }
+
+      li + li {
+        padding-left: 18px;
+      }
+    }
+
+    &__phone {
+      font-size: 18px;
+
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .banner {
+    .slick-dots {
+      left: 28px;
+      bottom: 28px;
+      transform: none;
+    }
+  }
+
+  .news-cards {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__card {
+      height: 220px;
+
+      &:nth-child(4) {
+        display: block;
+      }
+    }
+  }
+
+  .advantages {
+    &__container {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    &__item {
+      margin: 0;
+    }
+  }
+
+  .furniture-list {
+    grid-template-columns: repeat(2, 1fr);
+
+    &__slider {
+      height: calc((100vw - 348px - 40px - 21px) / 2 * 0.788);
+    }
+  }
+
+  .collections {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .footer {
+    padding: 36px 20px 70px;
+  }
+
+  .checkout {
+    grid-template-columns: 1fr;
+
+    &__form {
+      order: 1;
+    }
+  }
+
+  .news-list {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__img {
+      height: calc(((100vw - 348px - 40px - 33px) / 2 - 24px) * 0.739);
+    }
+  }
+
+  .product {
+    &__table {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__table-item:nth-child(n + 3) {
+      margin-top: 1px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
     grid-template-columns: 1fr;
 
     &__logo {
@@ -3095,8 +3200,10 @@ footer {
   }
 
   .furniture-list {
+    grid-template-columns: repeat(4, 1fr);
+
     &__slider {
-      height: calc((100vw - 40px - 63px) / 4 * 0.788);
+      height: calc((100vw - 40px - 21px) / 4 * 0.788);
     }
   }
 
@@ -3119,6 +3226,24 @@ footer {
   .news-gallery__item {
     height: calc((100vw - 40px - 48px) / 4 * 0.722);
   }
+
+  .checkout {
+    grid-template-columns: 1fr 519px;
+
+    &__cart {
+      order: unset;
+    }
+  }
+
+  .news-list {
+    &__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__img {
+      height: calc(((100vw - 40px - 99px) / 4 - 24px) * 0.739);
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -3127,39 +3252,6 @@ footer {
       display: grid;
       grid-gap: 30px;
       grid-template-columns: 1.5fr 1.5fr 1fr;
-    }
-  }
-
-  .news-cards {
-    &__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    &__card {
-      height: 220px;
-
-      &:nth-child(4) {
-        display: block;
-      }
-    }
-  }
-
-  .advantages {
-    &__container {
-      display: grid;
-      grid-gap: 40px;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
-    }
-
-    &__item {
-      margin: 0;
-    }
-  }
-
-  .collections {
-    &__grid {
-      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -3211,14 +3303,6 @@ footer {
 
     &__slider {
       height: calc((100vw - 40px - 21px) / 2 * 0.788);
-    }
-  }
-
-  .banner {
-    .slick-dots {
-      left: 28px;
-      bottom: 28px;
-      transform: none;
     }
   }
 
